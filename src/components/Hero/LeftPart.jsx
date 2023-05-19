@@ -1,5 +1,5 @@
 import React from "react";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const LeftPart = () => {
   const container = {
