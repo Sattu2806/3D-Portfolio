@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom'
 import Navbar from "./components/Navbar/Navbar"
 import Hero from './components/Hero/Hero'
 import { Suspense } from 'react'
-import { Loader } from '@react-three/drei'
 import About from "./components/About/About"
 import Projects from './components/Projects/Projects'
 import Technologies from './components/Technologies/Technologies'
@@ -15,7 +14,7 @@ function App() {
   return (
     <BrowserRouter>
         <Navbar/>
-        <Suspense fallback={<Loader/>}>
+        <Suspense fallback={null}>
           <Hero/>
         </Suspense>
 
