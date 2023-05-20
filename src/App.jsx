@@ -9,6 +9,7 @@ import Poster from './components/Poster';
 import Testimonials from './components/Testimonials/Testimonials';
 import Contact from './components/Contact/Contact';
 import ProjectMobile from './components/Projects/ProjectMobile';
+import { Loader } from '@react-three/drei';
 
 function App() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);
@@ -31,6 +32,7 @@ function App() {
       <Suspense fallback={null}>
         <Hero />
       </Suspense>
+      <Loader/>
       <About />
       {isDesktop ? (
         <Suspense fallback={null}>
